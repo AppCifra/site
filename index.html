@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Cifra · fale sem deixar rastro</title>
+<meta name="description" content="Sem número, sem e-mail, sem conta. Sua identidade nasce no seu celular, e nenhum servidor sabe quem você é.">
+<link rel="icon" href="/icone.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/estilo.css">
+<link rel="alternate" hreflang="pt-BR" href="https://appcifra.org/">
+<link rel="alternate" hreflang="en" href="https://appcifra.org/en/">
+<script src="/site.js" defer></script>
+</head>
+<body>
+<div class="pagina" lang="pt-BR">
+
+<header class="topo">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px">
+<a href="#inicio" aria-label="Cifra" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #E9EBE4">
+<span style="width: 13px; height: 13px; border-radius: 3px; background: #C6F432"></span>
+<span style="font: 500 20px 'Geist Mono', monospace; letter-spacing: -.02em">cifra</span>
+</a>
+<nav class="nav-links" aria-label="Seções">
+<a href="#como">Como funciona</a>
+<a href="#recursos">Recursos</a>
+<a href="#seguranca">Segurança</a>
+<a href="#perguntas">Perguntas</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 8px">
+<div class="seg" role="group" aria-label="Idioma">
+<a href="/" hreflang="pt-BR" lang="pt-BR" data-idioma="pt" aria-current="page" style="background: #C6F432; color: #0B0C0B">PT</a>
+<a href="/en/" hreflang="en" lang="en" data-idioma="en" aria-current="false" style="background: transparent; color: #8D9289">EN</a>
+</div>
+<a href="#baixar" class="botao botao-acento compacto">Baixar</a>
+</div>
+</div>
+</header>
+
+<section id="inicio" class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; padding-top: 48px; padding-bottom: 64px">
+<div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<span class="rotulo entra" style="--d: 0ms">mensageiro privado para android · código aberto</span>
+<h1 class="h1 entra" style="--d: 80ms">Fale sem deixar rastro.</h1>
+<p class="lead entra" style="--d: 160ms">Sem número, sem e-mail, sem conta. Sua identidade nasce no seu celular, e nenhum servidor sabe quem você é.</p>
+<p class="texto entra" style="--d: 240ms; max-width: 560px">As mensagens saem cifradas do seu celular, passam pela rede Tor — que esconde de onde você se conecta — e chegam a um servidor que não consegue lê-las nem sabe quem mandou.</p>
+<div class="entra" style="--d: 320ms; display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px">
+<a href="#baixar" class="botao botao-acento">Baixar para Android</a>
+<a href="#como" class="botao botao-linha">Como funciona</a>
+</div>
+<span class="mono entra" style="--d: 400ms; display: inline-flex; align-items: center; gap: 10px"><span class="ponto" aria-hidden="true"></span>versão 0.1.0 · android 10 ou mais novo · precisa do orbot · grátis, sem anúncios</span>
+</div>
+<div class="entra" style="--d: 220ms; flex: 1 1 340px; display: flex; justify-content: center; align-items: flex-start; gap: 20px">
+<div class="celular flutua so-largo" style="margin-top: 70px"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="position: relative; width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding-top: 20px">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 14px 4px 20px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font: 400 12px 'Geist Mono', monospace; color: #8D9289"><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6F432; box-shadow: 0 0 0 3px rgba(198,244,50,.22)"></span>tor · conectado</span>
+<div style="display: flex; gap: 4px">
+<button aria-label="Tema claro" style="width: 40px; height: 40px; border: 0; border-radius: 12px; background: transparent; color: #E9EBE4; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"></path></svg></button>
+<button aria-label="Ajustes" style="width: 40px; height: 40px; border: 0; border-radius: 12px; background: transparent; color: #E9EBE4; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></button>
+</div>
+</div>
+<h2 style="margin: 0; padding: 6px 20px 14px; font: 500 34px/1.1 Geist, sans-serif; letter-spacing: -.03em">Conversas</h2>
+<div style="margin: 0 20px 10px; height: 42px; display: flex; align-items: center; gap: 10px; padding: 0 14px; border-radius: 15px; background: #151715; color: #8D9289; font: 400 15px Geist, sans-serif"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4-4"></path></svg>Buscar — só neste aparelho</div>
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 4px 20px 6px; padding: 13px 16px; border-radius: 16px; background: #151715; font: 400 15px Geist, sans-serif">Pedidos de conversa<span style="min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: #C6F432; color: #0B0C0B; font: 500 11px 'Geist Mono', monospace; display: inline-grid; place-items: center; box-sizing: border-box">1</span></div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">Marta</span><svg width="15" height="15" viewBox="0 0 16 16" role="img" aria-label="verificado"><circle cx="8" cy="8" r="7" fill="#C6F432"></circle><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#0B0C0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">14:02</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">você: combinado. apaga depois de ler.</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289">1h</span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">Rafa</span><svg width="15" height="15" viewBox="0 0 16 16" role="img" aria-label="verificado"><circle cx="8" cy="8" r="7" fill="#C6F432"></circle><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#0B0C0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">11:40</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">prints bloqueados</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289">1d</span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">anon·7F3A</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">ontem</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">foto</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289"></span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">nota pessoal</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">seg</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">lista para quinta</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289"></span></div>
+</div>
+</div>
+
+<p style="margin: 18px 34px 0; text-align: center; font: 400 11px/1.55 'Geist Mono', monospace; color: #8D9289">conversas ficam cifradas no aparelho. o servidor só guarda, cifrado, o que ainda não foi entregue.</p>
+<button aria-label="Nova conversa" style="position: absolute; right: 22px; bottom: 34px; width: 58px; height: 58px; border: 0; border-radius: 19px; background: #C6F432; color: #0B0C0B; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0,0,0,.25)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+</div></div></div></div>
+<div class="celular flutua" style="--f: 1.6s"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding-top: 18px">
+<div style="display: flex; align-items: center; gap: 6px; padding: 6px 12px 10px 6px; border-bottom: 1px solid #262A26">
+<button aria-label="Voltar" style="width: 44px; height: 44px; border: 0; border-radius: 12px; background: transparent; color: #E9EBE4; display: grid; place-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<div style="flex: 1; display: flex; align-items: center; gap: 11px; min-width: 0">
+<div style="width: 38px; height: 38px; border-radius: 12px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; box-sizing: border-box; flex-shrink: 0"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 20px; height: 20px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="display: flex; flex-direction: column; gap: 2px"><span style="display: flex; gap: 5px; align-items: center; font: 600 16px Geist, sans-serif">Marta<svg width="14" height="14" viewBox="0 0 16 16" role="img" aria-label="verificado"><circle cx="8" cy="8" r="7" fill="#C6F432"></circle><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#0B0C0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289">tor · conectado</span></div>
+</div>
+<span style="height: 34px; padding: 0 11px; border-radius: 17px; display: inline-flex; align-items: center; gap: 6px; font: 400 12px 'Geist Mono', monospace; background: #C6F432; color: #0B0C0B"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="7.5"></circle><path d="M12 9v4l2.5 1.5M9.5 2.5h5"></path></svg>1h</span>
+</div>
+<div style="flex: 1; overflow: hidden; padding: 14px 14px 10px; display: flex; flex-direction: column; gap: 3px">
+<div style="align-self: center; max-width: 280px; margin: 4px 0 10px; padding: 10px 14px; border: 1px dashed #262A26; border-radius: 14px; text-align: center; font: 400 11px/1.55 'Geist Mono', monospace; color: #8D9289">cifrado de ponta a ponta. ninguém fora desta conversa pode ler — nem nós.</div>
+<div style="align-self: center; margin: 4px 0 8px; padding: 5px 11px; border-radius: 10px; background: #151715; font: 400 11px 'Geist Mono', monospace; color: #8D9289">mensagens temporárias: 1 hora</div>
+<div style="display: flex; justify-content: flex-start; margin-top: 8px"><div style="max-width: 78%; padding: 8px 12px 6px; border-radius: 18px 18px 18px 6px; background: #151715; display: flex; flex-direction: column; gap: 2px"><span style="font: 400 15.5px/1.38 Geist, sans-serif">chegou a foto do documento?</span><span style="align-self: flex-end; font: 400 10.5px 'Geist Mono', monospace; opacity: .62">52m · 13:58</span></div></div>
+<div style="display: flex; justify-content: flex-end; margin-top: 8px"><div style="width: 248px; padding: 4px 4px 5px; border-radius: 18px 18px 6px 18px; background: #C6F432; color: #0B0C0B; display: flex; flex-direction: column; gap: 2px; box-sizing: border-box"><div style="height: 150px; border-radius: 14px 14px 14px 14px; background: #1D201D; display: grid; place-items: center; color: #8D9289"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg></div><span style="padding: 6px 8px 0; font: 400 15.5px/1.38 Geist, sans-serif">chegou. já foi sem localização.</span><span style="align-self: flex-end; padding: 2px 8px 0; font: 400 10.5px 'Geist Mono', monospace; opacity: .62">58m · 14:00 · enviada</span></div></div>
+<div style="align-self: center; margin: 10px 0 4px; padding: 5px 11px; border-radius: 10px; background: #151715; font: 400 11px 'Geist Mono', monospace; color: #8D9289">uma mensagem expirou antes de você abrir</div>
+<div style="display: flex; justify-content: flex-start; margin-top: 8px"><div style="max-width: 78%; padding: 8px 12px 6px; border-radius: 18px 18px 18px 6px; background: #151715; display: flex; flex-direction: column; gap: 2px"><span style="font: 400 15.5px/1.38 Geist, sans-serif">perfeito. a reunião ficou para quinta.</span><span style="align-self: flex-end; font: 400 10.5px 'Geist Mono', monospace; opacity: .62">59m · 14:01</span></div></div>
+<div style="display: flex; justify-content: flex-end; margin-top: 8px"><div style="max-width: 78%; padding: 6px 6px 6px; border-radius: 18px 18px 6px 18px; background: #C6F432; color: #0B0C0B; display: flex; flex-direction: column; gap: 4px"><div style="padding: 6px 10px; border-radius: 12px; background: rgba(11,12,11,.12); display: flex; flex-direction: column; gap: 2px"><span style="font: 600 12.5px Geist, sans-serif">Marta</span><span style="font: 400 13px Geist, sans-serif; opacity: .75">perfeito. a reunião ficou para quinta.</span></div><span style="padding: 0 6px; font: 400 15.5px/1.38 Geist, sans-serif">combinado. apaga depois de ler.</span><span style="align-self: flex-end; padding: 0 6px; font: 400 10.5px 'Geist Mono', monospace; opacity: .62">1h · 14:02 · enviada</span></div></div>
+</div>
+<div style="display: flex; align-items: flex-end; gap: 8px; padding: 8px 12px 22px">
+<div style="flex: 1; display: flex; align-items: center; gap: 8px; min-height: 46px; box-sizing: border-box; padding: 0 8px 0 6px; border-radius: 23px; background: #151715; border: 1px solid #262A26">
+<span style="width: 34px; height: 34px; display: grid; place-items: center; color: #8D9289"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg></span>
+<span style="flex: 1; font: 400 16px Geist, sans-serif; color: #8D9289">Mensagem</span>
+<span style="display: inline-flex; align-items: center; gap: 3px; font: 400 11px 'Geist Mono', monospace; color: #8D9289"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="7.5"></circle><path d="M12 9v4l2.5 1.5M9.5 2.5h5"></path></svg>1h</span>
+</div>
+<span style="width: 46px; height: 46px; border-radius: 50%; background: #C6F432; color: #0B0C0B; display: grid; place-items: center; opacity: .35; transform: scale(.9)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5.5 11.5L12 5l6.5 6.5"></path></svg></span>
+</div>
+</div></div></div></div>
+</div>
+</section>
+
+<section style="border-top: 1px solid #262A26; border-bottom: 1px solid #262A26; background: #050605">
+<div class="wrap grade-3" style="padding-top: 32px; padding-bottom: 32px; gap: 22px">
+<div class="linha reveal" data-reveal="1" style="gap: 8px"><span class="rotulo" style="color: #C6F432">sem cadastro</span><span style="font: 400 15.5px/1.5 Geist, sans-serif">Nenhum dado pessoal: nem número, nem e-mail, nem nome. O seu ID é criado no celular, e só você tem a chave dele.</span></div>
+<div class="linha reveal" data-reveal="1" style="gap: 8px"><span class="rotulo" style="color: #C6F432">o servidor não lê</span><span style="font: 400 15.5px/1.5 Geist, sans-serif">Ele só repassa envelopes fechados, sem saber quem mandou, e apaga cada um assim que o celular de quem recebe confirma que guardou.</span></div>
+<div class="linha reveal" data-reveal="1" style="gap: 8px"><span class="rotulo" style="color: #C6F432">só pela rede tor</span><span style="font: 400 15.5px/1.5 Geist, sans-serif">O app não conecta de outro jeito. O servidor nunca fica sabendo de onde você se conecta.</span></div>
+</div>
+</section>
+
+<section id="como" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1">
+<span class="rotulo">como funciona</span>
+<h2 class="titulo">Do zero à primeira mensagem em quatro passos.</h2>
+<p class="texto">Não existe conta nem agenda: você e a outra pessoa instalam o Cifra e trocam os seus IDs. Tudo acontece nos dois celulares.</p>
+</div>
+<div class="grade-2" style="gap: 24px">
+<div class="card reveal" data-reveal="1" style="display: flex; flex-direction: column; gap: 24px; align-items: center">
+<div class="linha" style="align-self: stretch; gap: 10px"><span class="mono" style="color: #C6F432">01</span><h3 class="sub">Crie a sua identidade</h3><p class="texto">Um toque, e o app gera no celular uma identidade só sua. Ela vira um ID de 16 letras e números e um desenho único, para reconhecer de relance. Nenhum dado pessoal é pedido.</p></div>
+<div class="celular"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding: 28px 20px 26px">
+<div style="display: flex; align-items: center; gap: 9px"><span style="width: 11px; height: 11px; border-radius: 3px; background: #C6F432"></span><span style="font: 500 17px 'Geist Mono', monospace">cifra</span></div>
+<div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 18px">
+<h1 style="margin: 0; font: 500 42px/1.02 Geist, sans-serif; letter-spacing: -.035em">Fale sem deixar rastro.</h1>
+<p style="margin: 0; font: 400 16px/1.45 Geist, sans-serif; color: #8D9289">Sem número. Sem e-mail. Sua identidade é um par de chaves gerado neste aparelho — e só volta com as suas palavras.</p>
+<div style="margin-top: 22px; display: flex; align-items: center; gap: 20px; padding: 18px; border-radius: 22px; background: #151715; border: 1px solid #262A26">
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 3px; width: 92px; height: 92px; flex-shrink: 0"><div style="border-radius: 3px; background: #C6F432"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #C6F432"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #1D201D"></div><div style="border-radius: 3px; background: #E9EBE4"></div><div style="border-radius: 3px; background: #1D201D"></div></div>
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font: 400 11px/1.4 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #8D9289">seu id público</span><span style="font: 400 17px/1.3 'Geist Mono', monospace; letter-spacing: .02em; word-break: break-all">K7QD-4M2X-91ZA-HT6W</span></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<button style="height: 56px; border: 0; border-radius: 18px; background: #C6F432; color: #0B0C0B; font: 600 16px Geist, sans-serif">Continuar</button>
+<button style="height: 50px; border: 0; border-radius: 15px; background: transparent; color: #E9EBE4; font: 600 15.5px Geist, sans-serif">Restaurar com palavras</button>
+<span style="text-align: center; font: 400 12px 'Geist Mono', monospace; color: #8D9289">código aberto · X25519 · double ratchet</span>
+</div>
+</div></div></div></div>
+</div>
+<div class="card reveal" data-reveal="1" style="display: flex; flex-direction: column; gap: 24px; align-items: center">
+<div class="linha" style="align-self: stretch; gap: 10px"><span class="mono" style="color: #C6F432">02</span><h3 class="sub">Anote as 12 palavras</h3><p class="texto">Elas são a única cópia da sua identidade. Com elas, você recupera o ID num celular novo e abre o seu backup; sem elas, a identidade se perde junto com o aparelho. Quem as tiver vira você: guarde no papel, longe do celular.</p></div>
+<div class="celular"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding: 28px 20px 26px">
+<div style="display: flex; align-items: center; gap: 9px"><span style="width: 11px; height: 11px; border-radius: 3px; background: #C6F432"></span><span style="font: 500 17px 'Geist Mono', monospace">cifra</span></div>
+<div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 22px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<span style="font: 400 11px/1.4 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #8D9289">palavras de recuperação</span>
+<h2 style="margin: 0; font: 500 34px/1.1 Geist, sans-serif; letter-spacing: -.03em">Anote as 12 palavras</h2>
+<p style="margin: 0; font: 400 15px/1.45 Geist, sans-serif; color: #8D9289">No papel, na ordem. Com elas, a sua identidade volta em outro aparelho. Quem tiver estas palavras também assume a sua identidade.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 18px; padding: 18px 20px; border-radius: 22px; background: #151715; border: 1px solid #262A26">
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">01</span><span>orvalho</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">02</span><span>tecido</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">03</span><span>pedreiro</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">04</span><span>avental</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">05</span><span>gruta</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">06</span><span>lamparina</span></div></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">07</span><span>cobertor</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">08</span><span>roseira</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">09</span><span>quintal</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">10</span><span>novelo</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">11</span><span>farol</span></div><div style="display: flex; gap: 12px; padding: 7px 0; font: 400 16px 'Geist Mono', monospace"><span style="color: #8D9289">12</span><span>ameixa</span></div></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<button style="height: 56px; border: 0; border-radius: 18px; background: #C6F432; color: #0B0C0B; font: 600 16px Geist, sans-serif">Anotei</button>
+<button style="height: 50px; border: 0; border-radius: 15px; background: transparent; color: #E9EBE4; font: 600 15.5px Geist, sans-serif">Pular</button>
+</div>
+</div></div></div></div>
+</div>
+<div class="card reveal" data-reveal="1" style="display: flex; flex-direction: column; gap: 24px; align-items: center">
+<div class="linha" style="align-self: stretch; gap: 10px"><span class="mono" style="color: #C6F432">03</span><h3 class="sub">Troque o ID com quem você confia</h3><p class="texto">Mande o seu ID por onde quiser e cole o da outra pessoa em “Nova conversa”. Não há busca por nome, lista de contatos nem QR code. Quem escreve sem ser seu contato chega como pedido, para aceitar, recusar ou bloquear.</p></div>
+<div class="celular"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="position: relative; width: 390px; height: 844px; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif">
+<div lang="pt-BR" style="position: relative; width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding-top: 20px">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 14px 4px 20px">
+<span style="display: inline-flex; align-items: center; gap: 8px; font: 400 12px 'Geist Mono', monospace; color: #8D9289"><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6F432; box-shadow: 0 0 0 3px rgba(198,244,50,.22)"></span>tor · conectado</span>
+<div style="display: flex; gap: 4px">
+<button aria-label="Tema claro" style="width: 40px; height: 40px; border: 0; border-radius: 12px; background: transparent; color: #E9EBE4; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"></path></svg></button>
+<button aria-label="Ajustes" style="width: 40px; height: 40px; border: 0; border-radius: 12px; background: transparent; color: #E9EBE4; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"></path><circle cx="15" cy="7" r="2"></circle><circle cx="9" cy="17" r="2"></circle></svg></button>
+</div>
+</div>
+<h2 style="margin: 0; padding: 6px 20px 14px; font: 500 34px/1.1 Geist, sans-serif; letter-spacing: -.03em">Conversas</h2>
+<div style="margin: 0 20px 10px; height: 42px; display: flex; align-items: center; gap: 10px; padding: 0 14px; border-radius: 15px; background: #151715; color: #8D9289; font: 400 15px Geist, sans-serif"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4-4"></path></svg>Buscar — só neste aparelho</div>
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 4px 20px 6px; padding: 13px 16px; border-radius: 16px; background: #151715; font: 400 15px Geist, sans-serif">Pedidos de conversa<span style="min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: #C6F432; color: #0B0C0B; font: 500 11px 'Geist Mono', monospace; display: inline-grid; place-items: center; box-sizing: border-box">1</span></div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">Marta</span><svg width="15" height="15" viewBox="0 0 16 16" role="img" aria-label="verificado"><circle cx="8" cy="8" r="7" fill="#C6F432"></circle><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#0B0C0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">14:02</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">você: combinado. apaga depois de ler.</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289">1h</span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">Rafa</span><svg width="15" height="15" viewBox="0 0 16 16" role="img" aria-label="verificado"><circle cx="8" cy="8" r="7" fill="#C6F432"></circle><path d="M5 8.2l2 2 4-4.2" fill="none" stroke="#0B0C0B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">11:40</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">prints bloqueados</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289">1d</span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">anon·7F3A</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">ontem</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">foto</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289"></span></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px"><span style="font: 600 16px Geist, sans-serif; letter-spacing: -.01em">nota pessoal</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">seg</span></div>
+<div style="display: flex; align-items: center; gap: 8px"><span style="flex: 1; min-width: 0; font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">lista para quinta</span><span style="font: 400 11px 'Geist Mono', monospace; color: #8D9289"></span></div>
+</div>
+</div>
+
+<p style="margin: 18px 34px 0; text-align: center; font: 400 11px/1.55 'Geist Mono', monospace; color: #8D9289">conversas ficam cifradas no aparelho. o servidor só guarda, cifrado, o que ainda não foi entregue.</p>
+<button aria-label="Nova conversa" style="position: absolute; right: 22px; bottom: 34px; width: 58px; height: 58px; border: 0; border-radius: 19px; background: #C6F432; color: #0B0C0B; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0,0,0,.25)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+</div>
+<div style="position: absolute; inset: 0; background: rgba(0,0,0,.45)"></div>
+<div style="position: absolute; left: 8px; right: 8px; bottom: 8px; box-sizing: border-box; padding: 12px 20px 22px; border-radius: 34px; background: #151715; border: 1px solid #262A26; display: flex; flex-direction: column; gap: 16px">
+<div style="align-self: center; width: 40px; height: 4px; border-radius: 2px; background: #262A26"></div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font: 500 21px/1.25 Geist, sans-serif">Nova conversa</span>
+<span style="font: 400 14.5px/1.45 Geist, sans-serif; color: #8D9289">Cole o ID de quem você quer contatar. Sem agenda, sem descoberta automática.</span>
+</div>
+<div style="height: 46px; display: flex; align-items: center; padding: 0 16px; border-radius: 15px; background: #0B0C0B; border: 1px solid #C6F432; font: 400 17px 'Geist Mono', monospace; letter-spacing: .02em">K4RO-7Q2M-ZX9P-D3TA</div>
+<button style="height: 56px; border: 0; border-radius: 18px; background: #C6F432; color: #0B0C0B; font: 600 16px Geist, sans-serif">Iniciar conversa cifrada</button>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border-radius: 16px; background: #0B0C0B"><span style="font: 400 14.5px Geist, sans-serif; color: #8D9289">Seu ID</span><span style="display: inline-flex; align-items: center; gap: 8px; font: 400 14px 'Geist Mono', monospace">K7QD-4M2X-91ZA-HT6W<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8D9289" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2.5"></rect><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path></svg></span></div>
+</div>
+</div></div></div></div>
+</div>
+<div class="card reveal" data-reveal="1" style="display: flex; flex-direction: column; gap: 24px; align-items: center">
+<div class="linha" style="align-self: stretch; gap: 10px"><span class="mono" style="color: #C6F432">04</span><h3 class="sub">Confira o número de segurança (opcional)</h3><p class="texto">Cada conversa tem um número de 60 dígitos, igual nos dois celulares. Se os dois batem, ninguém está se passando pelo seu contato. Compare pessoalmente ou cole o número que a pessoa mandou por outro canal, e marque a conversa como verificada.</p></div>
+<div class="celular"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding: 18px 20px 0">
+<div style="display: flex; align-items: center; gap: 6px; margin-left: -14px"><span style="width: 44px; height: 44px; display: grid; place-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></span><span style="font: 500 17px Geist, sans-serif">Segurança</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 14px 0 18px">
+<div style="width: 96px; height: 96px; border-radius: 30px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; width: 54px; height: 54px"><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #C6F432"></div><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #C6F432"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #E9EBE4"></div><div style="border-radius: 2px; background: #1D201D"></div><div style="border-radius: 2px; background: #1D201D"></div></div></div>
+<span style="font: 500 24px Geist, sans-serif">Marta</span>
+<span style="font: 400 15px 'Geist Mono', monospace; color: #8D9289; letter-spacing: .02em">K4RO-7Q2M-ZX9P-D3TA</span>
+<span style="display: inline-flex; align-items: center; gap: 7px; height: 28px; padding: 0 12px; border-radius: 14px; font: 400 11.5px 'Geist Mono', monospace; background: #C6F432; color: #0B0C0B"><span style="width: 6px; height: 6px; border-radius: 50%; background: currentColor"></span>verificado</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 18px; border-radius: 20px; background: #151715">
+<span style="font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #8D9289">número de segurança</span>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px 8px; font: 400 17px 'Geist Mono', monospace; letter-spacing: .04em">
+<span>64723</span><span>26314</span><span>11470</span><span>09606</span><span>47524</span><span>27076</span><span>91694</span><span>20109</span><span>81930</span><span>59034</span><span>05395</span><span>50129</span>
+</div>
+<p style="margin: 0; font: 400 13.5px/1.4 Geist, sans-serif; color: #8D9289">Compare com Marta pessoalmente ou por outro canal confiável. Se os números coincidirem, ninguém está no meio.</p>
+</div>
+<button style="margin-top: 12px; height: 50px; border: 1px solid #262A26; border-radius: 15px; background: transparent; color: #E9EBE4; font: 600 15.5px Geist, sans-serif">Copiar o número</button>
+<div style="margin-top: 16px; display: flex; flex-direction: column; border-radius: 20px; background: #151715; overflow: hidden">
+<div style="display: flex; justify-content: space-between; padding: 15px 18px; font: 400 15px Geist, sans-serif">Apelido<span style="font: 400 13px 'Geist Mono', monospace; color: #8D9289">Marta ›</span></div>
+<div style="display: flex; justify-content: space-between; padding: 15px 18px; border-top: 1px solid #262A26; font: 400 15px Geist, sans-serif">Mensagens temporárias<span style="font: 400 13px 'Geist Mono', monospace; color: #8D9289">1 hora ›</span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px 14px 18px; border-top: 1px solid #262A26"><span style="font: 400 15px Geist, sans-serif">Bloquear prints nesta conversa</span><span style="width: 46px; height: 28px; border-radius: 14px; background: #262A26; position: relative; flex-shrink: 0"><span style="position: absolute; left: 3px; top: 3px; width: 22px; height: 22px; border-radius: 50%; background: #8D9289"></span></span></div>
+<div style="padding: 15px 18px; border-top: 1px solid #262A26; font: 400 15px Geist, sans-serif">Ocultar conversa</div>
+<div style="padding: 15px 18px; border-top: 1px solid #262A26; font: 400 15px Geist, sans-serif; color: #FF5A43">Apagar conversa</div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="caminho" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1">
+<span class="rotulo">o caminho de uma mensagem</span>
+<h2 class="titulo">Só os dois celulares leem. O resto do caminho vê envelopes fechados.</h2>
+<p class="texto">A criptografia segue os protocolos publicados do Signal, implementada em código aberto. Nada inventado em casa.</p>
+</div>
+<div class="rota reveal" data-reveal="1">
+<div class="trilho" aria-hidden="true"><span class="pacote"></span></div>
+<div class="rota-cards">
+<div class="card no" style="border-color: #C6F432"><span class="rotulo" style="color: #C6F432">seu celular</span><span class="forte">Fecha o envelope</span><span class="texto" style="font-size: 14.5px">A mensagem é cifrada com uma chave nova a cada envio. O remetente vai dentro do envelope, e todo envelope tem o mesmo tamanho: de fora, uma mensagem longa é igual a um “oi”.</span></div>
+<div class="card no no-tor"><span class="rotulo">rede tor</span><span class="forte">Esconde de onde você fala</span><span class="texto" style="font-size: 14.5px">O Orbot leva o envelope pela rede Tor. O servidor recebe sem saber a sua localização na internet.</span></div>
+<div class="card no"><span class="rotulo">servidor</span><span class="forte">Guarda sem saber de quem</span><span class="texto" style="font-size: 14.5px">Deixa o envelope na caixa de quem recebe e o apaga quando o celular dela confirma que guardou. Vê só que uma caixa recebeu algo, e a hora. Se ninguém busca em 14 dias, apaga sem entregar.</span></div>
+<div class="card no no-tor"><span class="rotulo">rede tor</span><span class="forte">De novo, sem endereço</span><span class="texto" style="font-size: 14.5px">Quem recebe também busca a sua caixa pela rede Tor.</span></div>
+<div class="card no" style="border-color: #C6F432"><span class="rotulo" style="color: #C6F432">celular de quem recebe</span><span class="forte">Abre o envelope</span><span class="texto" style="font-size: 14.5px">Só aqui a mensagem e o remetente aparecem.</span></div>
+</div>
+</div>
+<p class="texto reveal" data-reveal="1" style="font-size: 15px; max-width: 760px">Fotos, vídeos e arquivos (até 25 MB) viajam à parte, cifrados do mesmo jeito e guardados pelo mesmo prazo. Deles, o caminho vê só o tamanho aproximado.</p>
+</section>
+
+<section id="recursos" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1">
+<span class="rotulo">recursos</span>
+<h2 class="titulo">Você decide o que fica e o que some.</h2>
+<p class="texto">Cada opção explica, no próprio app, o que acontece ao ligar. Nada depende de uma nuvem.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div class="reveal" data-reveal="1" style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+<div class="linha" style="gap: 10px"><span class="rotulo" style="color: #C6F432">conversas ocultas</span><h3 class="titulo" style="font-size: 28px">Somem da lista. Voltam com um código.</h3><p class="texto">Escolha um código secreto e oculte as conversas que quiser: elas saem da lista, da busca e das notificações. Para ver de novo, digite o código no campo de busca. Sem ele, nada na tela indica que elas existem.</p></div>
+<div class="linha" style="gap: 10px"><span class="rotulo" style="color: #FF5A43">pânico</span><h3 class="titulo" style="font-size: 28px">Segure o botão. Tudo some.</h3><p class="texto">Em menos de dois segundos, o Cifra destrói as chaves e apaga conversas, contatos e ajustes deste celular; com conexão, pede ao servidor que apague o seu ID e a sua caixa. Não tem volta: a identidade só retorna com as 12 palavras, e o que você salvou na galeria ou exportou como backup continua onde estava.</p>
+<div class="panico-demo" aria-hidden="true" style="margin-top: 8px"><span class="panico-enche"></span><span class="panico-txt">segure para apagar tudo</span></div>
+</div>
+</div>
+<div class="reveal" data-reveal="1" style="flex: 1 1 520px; display: flex; flex-wrap: wrap; justify-content: center; gap: 24px">
+<div class="celular"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #0B0C0B; color: #E9EBE4; font-family: Geist, sans-serif; display: flex; flex-direction: column; padding-top: 20px">
+<div style="padding: 6px 20px 4px"><span style="display: inline-flex; align-items: center; gap: 8px; font: 400 12px 'Geist Mono', monospace; color: #8D9289"><span style="width: 7px; height: 7px; border-radius: 50%; background: #C6F432"></span>tor · conectado</span></div>
+<h2 style="margin: 0; padding: 16px 20px 14px; font: 500 34px/1.1 Geist, sans-serif; letter-spacing: -.03em">Conversas</h2>
+<div style="margin: 0 20px 14px; height: 42px; display: flex; align-items: center; gap: 10px; padding: 0 14px; border-radius: 15px; background: #151715; color: #8D9289; font: 400 15px Geist, sans-serif"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4-4"></path></svg>Buscar — só neste aparelho</div>
+<span style="padding: 4px 24px 2px; font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #C6F432">ocultas</span>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px"><span style="font: 600 16px Geist, sans-serif">Dani</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">13:20</span></div><span style="font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">o endereço novo fica com você.</span></div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px"><span style="font: 600 16px Geist, sans-serif">Advogada</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">ontem</span></div><span style="font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">você: mando os papéis amanhã.</span></div>
+</div>
+
+<div style="margin: 6px 20px 12px; padding: 13px 16px; border-radius: 16px; background: #151715; font: 400 15px Geist, sans-serif">Fechar ocultas</div>
+<div style="height: 1px; margin: 0 20px 6px; background: #262A26"></div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px"><span style="font: 600 16px Geist, sans-serif">Marta</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">14:02</span></div><span style="font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">você: combinado. apaga depois de ler.</span></div>
+</div>
+
+<div style="display: flex; gap: 14px; align-items: center; padding: 11px 20px">
+<div style="width: 48px; height: 48px; border-radius: 15px; background: #151715; border: 1px solid #262A26; display: grid; place-items: center; flex-shrink: 0; box-sizing: border-box"><div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5px; width: 26px; height: 26px"><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #C6F432"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #1D201D"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div><div style="border-radius: 1px; background: #E9EBE4"></div></div></div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px"><span style="font: 600 16px Geist, sans-serif">nota pessoal</span><span style="flex: 1"></span><span style="font: 400 11.5px 'Geist Mono', monospace; color: #8D9289">seg</span></div><span style="font: 400 14.5px Geist, sans-serif; color: #8D9289; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">lista para quinta</span></div>
+</div>
+
+</div></div></div></div>
+<div class="celular" style="background: #DEDCD3; border-color: #DEDCD3"><div class="tela" inert aria-hidden="true"><div><div lang="pt-BR" style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; background: #F2F1EB; color: #131412; font-family: Geist, sans-serif; display: flex; flex-direction: column; gap: 18px; padding: 18px 20px 0">
+<div style="display: flex; align-items: center; gap: 6px; margin-left: -14px"><span style="width: 44px; height: 44px; display: grid; place-items: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></span><span style="font: 500 17px Geist, sans-serif">Ajustes</span></div>
+<div style="display: flex; align-items: center; gap: 16px; padding: 16px; border-radius: 22px; background: #FFFFFF; border: 1px solid #DEDCD3">
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2.5px; width: 56px; height: 56px; flex-shrink: 0"><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #C6F432"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #E9E8E1"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div><div style="border-radius: 2px; background: #131412"></div></div>
+<div style="display: flex; flex-direction: column; gap: 5px"><span style="font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #64675F">seu id · toque para copiar</span><span style="font: 400 16px 'Geist Mono', monospace; letter-spacing: .02em">K7QD-4M2X-91ZA-HT6W</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="padding-left: 4px; font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #64675F">aparência</span>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; padding: 4px; border-radius: 15px; background: #E9E8E1"><span style="height: 40px; border-radius: 12px; display: grid; place-items: center; font: 500 14.5px Geist, sans-serif; color: #64675F">Escuro</span><span style="height: 40px; border-radius: 12px; display: grid; place-items: center; font: 500 14.5px Geist, sans-serif; background: #FFFFFF">Claro</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="padding-left: 4px; font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #64675F">privacidade</span>
+<div style="display: flex; flex-direction: column; border-radius: 20px; background: #FFFFFF; overflow: hidden">
+<div style="display: flex; justify-content: space-between; padding: 15px 18px; font: 400 15px Geist, sans-serif">Bloquear sozinho<span style="font: 400 13px 'Geist Mono', monospace; color: #64675F">5 minutos ›</span></div>
+<div style="display: flex; justify-content: space-between; padding: 15px 18px; border-top: 1px solid #DEDCD3; font: 400 15px Geist, sans-serif">Código secreto<span style="font: 400 13px 'Geist Mono', monospace; color: #64675F">›</span></div>
+
+<div style="display: flex; align-items: center; gap: 14px; padding: 13px 16px 13px 18px; border-top: 1px solid #DEDCD3">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 3px"><span style="font: 400 15px Geist, sans-serif">Notificações cegas</span><span style="font: 400 12.5px/1.35 Geist, sans-serif; color: #64675F">Mostram só “nova mensagem”, sem remetente.</span></div>
+<span style="width: 46px; height: 28px; border-radius: 14px; position: relative; flex-shrink: 0; background: #C6F432"><span style="position: absolute; top: 3px; left: 21px; width: 22px; height: 22px; border-radius: 50%; background: #0B0C0B"></span></span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 14px; padding: 13px 16px 13px 18px; border-top: 1px solid #DEDCD3">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 3px"><span style="font: 400 15px Geist, sans-serif">Bloquear capturas de tela</span><span style="font: 400 12.5px/1.35 Geist, sans-serif; color: #64675F">Prints e gravações saem em branco. Também oculta o app no multitarefa.</span></div>
+<span style="width: 46px; height: 28px; border-radius: 14px; position: relative; flex-shrink: 0; background: #C6F432"><span style="position: absolute; top: 3px; left: 21px; width: 22px; height: 22px; border-radius: 50%; background: #0B0C0B"></span></span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 14px; padding: 13px 16px 13px 18px; border-top: 1px solid #DEDCD3">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 3px"><span style="font: 400 15px Geist, sans-serif">Confirmações de leitura</span><span style="font: 400 12.5px/1.35 Geist, sans-serif; color: #64675F">Revelam quando você está online. Desligadas, você também não vê as dos outros.</span></div>
+<span style="width: 46px; height: 28px; border-radius: 14px; position: relative; flex-shrink: 0; background: #DEDCD3"><span style="position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #FFFFFF"></span></span>
+</div>
+
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span style="padding-left: 4px; font: 400 11px 'Geist Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #BF321D">pânico</span>
+<div style="height: 56px; border-radius: 18px; border: 1px solid #BF321D; position: relative; overflow: hidden; display: grid; place-items: center"><span style="position: absolute; left: 0; top: 0; bottom: 0; width: 38%; background: #BF321D"></span><span style="position: relative; font: 600 15.5px Geist, sans-serif; color: #BF321D">continue segurando…</span></div>
+</div>
+</div></div></div></div>
+</div>
+</div>
+<div class="grade-3">
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Mensagens temporárias</span><span class="texto" style="font-size: 15px">De 10 segundos a 7 dias, contando do envio, por conversa ou por mensagem. Somem dos dois celulares na mesma hora. Vêm desligadas.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Apagar para todos</span><span class="texto" style="font-size: 15px">Qualquer mensagem, sua ou da outra pessoa, sem limite de tempo e sem deixar aviso no lugar. Se ela estiver sem conexão, some quando voltar.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Fotos e vídeos sem metadados</span><span class="texto" style="font-size: 15px">Localização, modelo do celular, data e miniatura saem antes do envio, e as fotos são reduzidas (até 2048 px). Documentos vão sem o nome do arquivo, com o conteúdo como está.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Bloquear sozinho</span><span class="texto" style="font-size: 15px">Depois de 5 minutos parado (ou ao sair, 1 min, 15 min, 1 h), o app tranca e só abre com a digital ou a senha do celular. Bloqueado, nem o próprio app lê as conversas.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Bloquear capturas de tela</span><span class="texto" style="font-size: 15px">Prints e gravações saem em branco, e a prévia no multitarefa fica vazia. Vem ligado; numa conversa, vale para os dois celulares.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Notificações cegas</span><span class="texto" style="font-size: 15px">Só “nova mensagem”, sem nome nem texto. O aviso vem do próprio app, sem passar pelo Google — por isso ele mantém uma notificação fixa na barra.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Nada na nuvem</span><span class="texto" style="font-size: 15px">O Cifra fica fora do backup do Google e de qualquer nuvem. Se quiser, exporte um arquivo de backup que só abre com as suas 12 palavras: leva contatos e ajustes; mensagens e conversas ocultas, não.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Confirmações de leitura e “digitando…”</span><span class="texto" style="font-size: 15px">Desligadas por padrão. Ligadas, funcionam só entre quem também liga.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Nota pessoal</span><span class="texto" style="font-size: 15px">Uma conversa com você mesmo que nunca sai do celular.</span></div>
+
+</div>
+</section>
+
+<section id="seguranca" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1">
+<span class="rotulo">segurança</span>
+<h2 class="titulo">O que o Cifra protege — e o que não protege.</h2>
+<p class="texto">Nenhum app é “100% seguro”. Este é o mapa do que ele faz e do que depende de você.</p>
+</div>
+<div class="grade-2">
+<div class="card reveal lista" data-reveal="1" style="gap: 18px; border-color: #262A26">
+<span class="rotulo" style="color: #C6F432">protege</span>
+
+<div class="linha"><span class="forte">O conteúdo</span><span class="texto" style="font-size: 15px">Só os dois celulares leem. Servidor e rede veem envelopes fechados, todos do mesmo tamanho.</span></div>
+
+<div class="linha"><span class="forte">Quem fala com quem</span><span class="texto" style="font-size: 15px">O servidor não guarda quem mandou cada mensagem, e a rede Tor esconde de onde cada um se conecta.</span></div>
+
+<div class="linha"><span class="forte">O celular bloqueado</span><span class="texto" style="font-size: 15px">As conversas ficam num banco cifrado que só abre com a sua digital ou senha. Quem pegar o aparelho bloqueado não lê nada — e o que você apagou não volta.</span></div>
+
+<div class="linha"><span class="forte">A troca de chaves</span><span class="texto" style="font-size: 15px">O número de segurança mostra se alguém se colocou entre você e o seu contato.</span></div>
+
+</div>
+<div class="card reveal lista" data-reveal="1" style="gap: 18px; background: #0B0C0B; border-color: #262A26">
+<span class="rotulo" style="color: #FF5A43">não protege</span>
+
+<div class="linha"><span class="forte">Quem recebeu a mensagem</span><span class="texto" style="font-size: 15px">Ela pode guardar, copiar ou fotografar a tela com outro aparelho.</span></div>
+
+<div class="linha"><span class="forte">Um app alterado do outro lado</span><span class="texto" style="font-size: 15px">Mensagens temporárias, apagar para todos e bloqueio de prints dependem de a outra pessoa usar o Cifra original.</span></div>
+
+<div class="linha"><span class="forte">O celular desbloqueado na mão de alguém</span><span class="texto" style="font-size: 15px">Com o app aberto, quem olha a tela vê. O bloqueio automático e as conversas ocultas reduzem o dano.</span></div>
+
+<div class="linha"><span class="forte">O fato de você usar o Tor</span><span class="texto" style="font-size: 15px">A sua operadora não vê com quem você fala, mas vê que você usa a rede Tor e quando o app está ativo.</span></div>
+
+</div>
+</div>
+<div class="card reveal lista" data-reveal="1" style="gap: 18px">
+<span class="rotulo">testado antes de publicar</span>
+<p style="margin: 0; font: 400 17px/1.5 Geist, sans-serif; max-width: 820px; text-wrap: pretty">Durante o desenvolvimento desta versão, o app passou por 12 testes de aceitação em emulador — entre eles uma perícia com o IPED, a ferramenta de análise forense da Polícia Federal:</p>
+<div class="grade-3" style="gap: 10px 24px">
+
+<span class="mono" style="display: flex; gap: 10px; align-items: flex-start; color: #E9EBE4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>celular bloqueado · nada legível em 36 mil itens analisados</span></span>
+
+<span class="mono" style="display: flex; gap: 10px; align-items: flex-start; color: #E9EBE4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>rede · só tráfego pela rede tor, nenhum endereço exposto</span></span>
+
+<span class="mono" style="display: flex; gap: 10px; align-items: flex-start; color: #E9EBE4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C6F432" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>banco do servidor · sem conteúdo, remetente ou endereço</span></span>
+
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; border-top: 1px solid #262A26; padding-top: 18px">
+<p class="texto" style="font-size: 14.5px; max-width: 680px">Os testes ainda não foram repetidos num aparelho real, e o código não passou por auditoria de segurança independente. O Cifra é novo: leve isso em conta.</p>
+<a href="https://github.com/AppCifra/Cifra/blob/main/docs/VERIFICACAO.md" style="font: 500 14.5px Geist, sans-serif; white-space: nowrap">Ler o relatório →</a>
+</div>
+</div>
+</section>
+
+<section id="baixar" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1">
+<span class="rotulo">baixar</span>
+<h2 class="titulo">Cifra para Android.</h2>
+<p class="texto">Grátis, sem anúncios e sem rastreamento. Por enquanto, o arquivo de instalação (APK) é baixado direto daqui.</p>
+</div>
+<div class="grade-2">
+<div class="card reveal lista" data-reveal="1" style="gap: 18px; border-color: #C6F432">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap"><span style="font: 500 24px 'Geist Mono', monospace">cifra 0.1.0</span><span class="mono">android 10 ou mais novo</span></div>
+<a href="https://github.com/AppCifra/Cifra/releases/download/v0.1.0/cifra-0.1.0.apk" class="botao botao-acento" style="width: 100%">Baixar o APK</a>
+<span class="rotulo" style="padding-top: 6px">você vai precisar de</span>
+
+<span class="item">Android 10 ou mais novo, com PIN, padrão ou senha de bloqueio de tela. Sem bloqueio de tela, o app não guarda a identidade; se você remover o bloqueio depois, as conversas deste celular se perdem.</span>
+
+<span class="item">O Orbot, app gratuito e de código aberto que liga o celular à rede Tor. Sem ele, o Cifra não conecta.</span>
+
+<span class="item">Alguém do outro lado com o Cifra: não dá para falar com quem usa outro app.</span>
+
+<p class="texto" style="font-size: 14.5px">O Orbot está em <a href="https://orbot.app">orbot.app</a>, na Google Play e no F-Droid.</p>
+</div>
+<div class="card reveal lista" data-reveal="1" style="gap: 18px">
+<span class="rotulo">como instalar</span>
+
+<div style="display: flex; gap: 14px"><span class="mono" style="color: #C6F432">1</span><span class="texto" style="font-size: 15.5px">Instale o Orbot e conecte-o à rede Tor.</span></div>
+
+<div style="display: flex; gap: 14px"><span class="mono" style="color: #C6F432">2</span><span class="texto" style="font-size: 15.5px">Baixe o APK do Cifra e abra o arquivo. O Android avisa que ele vem de fora da loja: é normal. Permita a instalação só para o navegador que você usou.</span></div>
+
+<div style="display: flex; gap: 14px"><span class="mono" style="color: #C6F432">3</span><span class="texto" style="font-size: 15.5px">Abra o Cifra. Com o Orbot ligado, a lista de conversas mostra “tor · conectado”. Se mostrar “tor · indisponível”, abra o Orbot de novo.</span></div>
+
+<div style="display: flex; gap: 14px"><span class="mono" style="color: #C6F432">4</span><span class="texto" style="font-size: 15.5px">Anote as 12 palavras e troque o seu ID com quem você quer falar. Versões novas instalam por cima, e as conversas ficam.</span></div>
+
+<span class="rotulo" style="padding-top: 6px">o que ainda não tem</span>
+
+<span class="item item-neutro">iPhone e versão para computador</span>
+
+<span class="item item-neutro">grupos, chamadas e mensagens de voz</span>
+
+<span class="item item-neutro">vários celulares com a mesma identidade</span>
+
+<span class="item item-neutro">levar as conversas para um celular novo: a identidade e os contatos voltam, as mensagens não</span>
+
+<p class="texto" style="font-size: 14.5px">Sem data para nenhum deles. O que vier instala por cima, com a mesma assinatura.</p>
+</div>
+</div>
+<details class="card reveal" data-reveal="1">
+<summary>
+<span class="linha" style="gap: 4px"><span class="forte">Quer conferir se o arquivo é o original?</span><span class="texto" style="font-size: 14.5px">Um arquivo adulterado poderia se passar pelo Cifra. Duas conferências, para quem quiser ir até o fim.</span></span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8D9289" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</summary>
+<div class="grade-2" style="padding-top: 22px">
+<div class="conf-caixa">
+<span class="rotulo" style="color: #C6F432">1 · o arquivo desta versão</span>
+<span class="forte" style="font-size: 19px">Confira o APK que você baixou</span>
+<p class="texto" data-sem-script style="font-size: 14.5px">Sem JavaScript, a conta não roda nesta página: confira no terminal, logo abaixo.</p>
+<div id="soltar" hidden style="border: 1.5px dashed #262A26; border-radius: 16px; padding: 24px 18px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; transition: border-color .25s">
+<label style="display: flex; flex-direction: column; align-items: center; gap: 12px; cursor: pointer">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#8D9289" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5.5 12.5L12 19l6.5-6.5"></path></svg>
+<span style="font: 400 15px/1.45 Geist, sans-serif; color: #E9EBE4; max-width: 300px">Toque para escolher o arquivo baixado, ou arraste-o para cá.</span>
+<input type="file" accept=".apk" id="arquivo" style="position: absolute; width: 1px; height: 1px; opacity: 0">
+</label>
+<span data-estado="calculando" hidden class="mono">calculando…</span>
+<span data-estado="confere" hidden style="font: 500 16px Geist, sans-serif; color: #C6F432">Confere: é o arquivo oficial desta versão.</span>
+<span data-estado="diferente" hidden style="font: 500 16px Geist, sans-serif; color: #FF5A43">Não confere. Não instale este arquivo.</span>
+<span data-estado="erro" hidden style="font: 500 16px Geist, sans-serif; color: #FF5A43">Não foi possível ler o arquivo.</span>
+<code data-estado="temCalculado" hidden class="codigo" style="text-align: left; width: 100%; box-sizing: border-box"></code>
+</div>
+<span class="mono" style="display: flex; flex-wrap: wrap; gap: 0 8px"><span>valor oficial:</span><span id="esperado" style="color: #E9EBE4; word-break: break-all">957628f370b10ced52808c96a223e7e4fc1631e0a48dd8f1def6bc29f644ff16</span></span>
+
+<span class="texto" style="font-size: 14.5px">O arquivo não sai do seu aparelho: a conta é feita aqui, no navegador.</span>
+<details class="miudo"><summary>Prefere conferir no terminal?</summary>
+<div class="lista" style="gap: 8px; padding-top: 12px">
+<code class="codigo">Windows: certutil -hashfile cifra-0.1.0.apk SHA256</code>
+<code class="codigo">Linux: sha256sum cifra-0.1.0.apk</code>
+<code class="codigo">macOS: shasum -a 256 cifra-0.1.0.apk</code>
+</div>
+</details>
+</div>
+<div class="conf-caixa">
+<span class="rotulo" style="color: #C6F432">2 · quem assinou</span>
+<span class="forte" style="font-size: 19px">Impressão digital da chave do Cifra</span>
+<code class="codigo">52:C0:6A:21:D4:DB:82:5A:FA:C2:64:C3:C5:87:E4:71:06:9A:BD:5F:C7:44:6B:DC:3C:6C:D8:A1:BC:6A:33:F4</code>
+<span class="texto" style="font-size: 14.5px">É a mesma em todas as versões. No computador, com o Android SDK, o comando abaixo mostra a linha “certificate SHA-256 digest” — em minúsculas e sem os dois-pontos:</span>
+<code class="codigo">apksigner verify --print-certs cifra-0.1.0.apk</code>
+<span class="texto" style="font-size: 14.5px">A impressão digital também está no repositório do código. Confira em mais de um lugar.</span>
+<div style="margin-top: auto; padding: 14px 16px; border-radius: 14px; border: 1px solid #FF5A43; display: flex; flex-direction: column; gap: 4px">
+<span class="forte" style="font-size: 15px; color: #FF5A43">Se algo não bater, não instale.</span>
+<span class="texto" style="font-size: 14.5px">Apague o arquivo e baixe de novo, só daqui.</span>
+</div>
+</div>
+</div>
+</details>
+</section>
+
+<section id="perguntas" class="wrap secao">
+<div class="cabecalho reveal" data-reveal="1"><span class="rotulo">perguntas</span><h2 class="titulo">Perguntas frequentes.</h2></div>
+<div class="grade-2">
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Meus amigos precisam instalar também?</span><span class="texto" style="font-size: 15.5px">Sim. O Cifra só fala com o Cifra: cada pessoa instala o app e o Orbot no seu Android, e vocês trocam os IDs. Não dá para conversar com quem usa WhatsApp ou outro app.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Por que preciso do Orbot? Ele é seguro?</span><span class="texto" style="font-size: 15.5px">O Cifra só se conecta pela rede Tor, e no Android quem faz essa ligação é o Orbot — um app gratuito e de código aberto, disponível em orbot.app, na Google Play e no F-Droid. Não existe modo sem Tor.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Funciona no iPhone? Tem grupos, chamadas ou áudio?</span><span class="texto" style="font-size: 15.5px">Ainda não. Hoje o Cifra é só para Android e só para conversas entre duas pessoas, com texto, fotos, vídeos e arquivos. Não há data para o resto.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Troquei ou perdi o celular. E agora?</span><span class="texto" style="font-size: 15.5px">Com as 12 palavras, a sua identidade volta no aparelho novo, e o antigo para de receber na hora. Com um backup exportado, voltam contatos e ajustes. As mensagens ficam no celular antigo: elas não migram. Sem as palavras, a identidade se perde: crie outra e avise os seus contatos.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">O que o servidor guarda, e o que quem opera consegue ver?</span><span class="texto" style="font-size: 15.5px">Só o que ainda não foi entregue, cifrado e sem remetente; entregou, apaga, e o que ninguém busca some em 14 dias. Quem opera vê que um ID existe, quando a caixa dele recebe algo, quando o app está conectado e o tamanho aproximado dos arquivos. Não vê conteúdo, remetente, localização nem lista de contatos — e não guarda registro de nada.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Posso confiar? O código foi auditado?</span><span class="texto" style="font-size: 15.5px">Ainda não houve auditoria independente, e os testes rodaram em emulador. Em compensação, tudo é aberto: qualquer pessoa pode ler o código do app e do servidor e conferir o arquivo que instala. É um app novo; trate-o como tal.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Quanto custa?</span><span class="texto" style="font-size: 15.5px">Nada. Não tem anúncio, não tem rastreamento e não tem plano pago. O projeto se mantém com doações.</span></div>
+
+<div class="card reveal linha" data-reveal="1" style="gap: 10px"><span class="forte">Posso rodar o meu próprio servidor?</span><span class="texto" style="font-size: 15.5px">O código do servidor é aberto e qualquer pessoa pode subir uma cópia, mas o app desta versão só fala com o servidor oficial.</span></div>
+
+</div>
+</section>
+
+<section id="codigo" class="wrap secao" style="padding-bottom: 104px">
+<div class="card reveal" data-reveal="1" style="display: flex; flex-wrap: wrap; gap: 36px; padding: 32px">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<span class="rotulo">código aberto</span>
+<h2 class="titulo" style="font-size: 34px">Nada escondido. Confira você mesmo.</h2>
+<p class="texto">O app, o servidor e a política de privacidade são públicos, sob a licença GPLv3. A segurança vem da matemática, não de segredo: qualquer pessoa pode ler o código, apontar problemas e conferir que o arquivo instalado é o mesmo que foi publicado.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 4px">
+<a href="https://github.com/AppCifra/Cifra" class="botao botao-linha">Ver o código no GitHub</a>
+<a href="https://github.com/AppCifra/Cifra/blob/main/docs/PRIVACIDADE.md" class="botao botao-linha">Política de privacidade</a>
+</div>
+<blockquote style="margin: 10px 0 0; padding: 22px 24px; border-radius: 18px; background: #0B0C0B; border: 1px solid #262A26; display: flex; flex-direction: column; gap: 12px">
+<span class="rotulo">por que o cifra existe</span>
+<span class="cit">“A privacidade é necessária para uma sociedade aberta na era eletrônica. Privacidade não é segredo. […] Privacidade é o poder de se revelar ao mundo seletivamente.”</span>
+<span class="mono" style="color: #C6F432">Eric Hughes, A Cypherpunk’s Manifesto, 1993 · tradução livre</span>
+<span class="texto" style="font-size: 15px">O Cifra existe para você exercer esse poder: conversar sem entregar quem você é — nem mesmo para o servidor que leva a mensagem.</span>
+</blockquote>
+</div>
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span class="rotulo">servidor oficial · só pela rede tor</span>
+<code class="codigo">fmkanegcrocf53hmd7xnz4gnrjkewk4oo4bixebrrlxxrs4u4gpxviyd.onion</code>
+<span class="rotulo" style="padding-top: 10px">doações em monero</span>
+<code class="codigo">86QtU9BtiGzRdwNZo5yd9eTbH4EHVd8xd1Cr2DpHLeBJe7Kqiz4JrzzDjq9F79XuTcGuFGi1TnouYX7deAkS7Zr4K1Hmxak</code>
+<span class="texto" style="font-size: 14px">Confira o endereço também dentro do app antes de enviar.</span>
+<span class="rotulo" style="padding-top: 10px">contato</span>
+<a href="mailto:appcifra@proton.me" style="font: 400 15px 'Geist Mono', monospace; color: #E9EBE4; text-decoration: none">appcifra@proton.me</a>
+</div>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #262A26">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: 14px 24px; justify-content: space-between; align-items: center; padding-top: 26px; padding-bottom: 36px">
+<span style="display: flex; align-items: center; gap: 10px"><span style="width: 12px; height: 12px; border-radius: 3px; background: #C6F432"></span><span style="font: 500 16px 'Geist Mono', monospace">cifra</span></span>
+<span class="mono">cifra 0.1.0 · gplv3 · github.com/AppCifra/Cifra</span>
+</div>
+</footer>
+
+<div data-estado="pedirIdioma" hidden class="veu" role="dialog" aria-modal="true" aria-labelledby="idioma-titulo">
+<div class="painel">
+<span class="alca" aria-hidden="true"></span>
+<span class="rotulo">idioma · language</span>
+<h2 id="idioma-titulo" class="sub" style="font-size: 21px">Em que idioma você prefere ler? · Which language do you prefer?</h2>
+<div style="display: grid; gap: 10px">
+<a href="/" hreflang="pt-BR" lang="pt-BR" data-idioma="pt" class="botao botao-acento" style="height: 56px">Português (Brasil)</a>
+<a href="/en/" hreflang="en" lang="en" data-idioma="en" class="botao botao-linha" style="height: 52px">English</a>
+</div>
+<span class="mono" style="text-align: center">dá para trocar depois, no topo da página · you can change it later, at the top of the page</span>
+</div>
+</div>
+
+</div>
+</body>
+</html>
